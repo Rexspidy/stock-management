@@ -1,0 +1,35 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Employee Login</h2>
+    <form id="employee-login">
+        <label for="username">Username:</label>
+        <input type="text" id="employee-username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="employee-password" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <!-- Employee Product Entry Form -->
+    <div id="employee-form" style="display:none;">
+        <h3>Enter Product Details</h3>
+        <form id="product-entry">
+            <input type="text" placeholder="Product Name" id="product-name" required>
+            <input type="number" placeholder="Buy Quantity" id="buy-quantity" required>
+            <input type="number" placeholder="Sell Quantity" id="sell-quantity" required>
+            <input type="date" id="date" required>
+            <textarea placeholder="Remarks" id="remarks"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

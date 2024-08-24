@@ -1,0 +1,40 @@
+<!-- admin.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Admin Login</h2>
+    <form id="admin-login">
+        <label for="username">Username:</label>
+        <input type="text" id="admin-username" value="admin" required>
+        <label for="password">Password:</label>
+        <input type="password" id="admin-password" value="adminpass" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <!-- Admin Dashboard -->
+    <div id="admin-dashboard" style="display:none;">
+        <h3>Dashboard</h3>
+        <div id="product-list">
+            <h4>Manage Products</h4>
+            <button id="add-product">Add Product</button>
+            <ul id="products">
+                <!-- Products will be listed here -->
+            </ul>
+        </div>
+        <div id="stock-overview">
+            <h4>Stock Overview</h4>
+            <table id="stock-table">
+                <!-- Stock data will be inserted here -->
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
