@@ -1,36 +1,74 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Login</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Login Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #8bc34a, #f9f9f9, #ffeb3b);
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .login-buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .login-buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #4caf50;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .login-buttons a:hover {
+            background-color: #388e3c;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .login-buttons {
+                flex-direction: column;
+            }
+
+            .login-buttons a {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h2>Employee Login</h2>
-    <form id="employee-login">
-        <label for="username">Username:</label>
-        <input type="text" id="employee-username" required>
-        <label for="password">Password:</label>
-        <input type="password" id="employee-password" required>
-        <button type="submit">Login</button>
-    </form>
-    <a href="admin.html">Go to Admin Panel</a>
-
-    <!-- Employee Product Entry Form -->
-    <div id="employee-form" style="display:none;">
-        <h3>Enter Product Details</h3>
-        <form id="product-entry">
-            <input type="text" placeholder="Product Name" id="product-name" required>
-            <input type="number" placeholder="Buy Quantity" id="buy-quantity" required>
-            <input type="number" placeholder="Sell Quantity" id="sell-quantity" required>
-            <input type="date" id="date" required>
-            <textarea placeholder="Remarks" id="remarks"></textarea>
-            <button type="submit">Submit</button>
-        </form>
+    <div class="container">
+        <h1>Welcome to the Login Page</h1>
+        <div class="login-buttons">
+            <a href="user-login.html">User Login</a>
+            <a href="admin-login.html">Admin Login</a>
+        </div>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
