@@ -1,8 +1,8 @@
 // script.js
 
 // Admin credentials (you can hardcode or store securely)
-const adminUsername = "admin";
-const adminPassword = "adminpass";
+const adminUsername = "admi";
+const adminPassword = "admipass";
 
 // Employee and admin login logic
 document.getElementById('employee-login').addEventListener('submit', function(event) {
